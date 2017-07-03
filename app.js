@@ -7,14 +7,12 @@ app.use(logger);
 app.use(routes);
 
 
-
-
 if(config.https) {
 	const https = require('https');
 	const fs = require('fs');
 	const credentials = {
-		cert: fs.readFileSync('../handla/server/cert.pem'),
-		key: fs.readFileSync('../handla/server/key.pem')
+		cert: fs.readFileSync(config.certificate.cert),
+		key: fs.readFileSync(config.certificate.key)
 	};
 	https.createServer(credentials, app).listen(config.port, onListening);
 } else {

@@ -9,8 +9,8 @@ h1, h2, h3, h4 {
 .line-number {
 	background-color: rgb(83, 204, 83);
 	color: rgb(255, 255, 255);
-	padding: 0.2rem 0.2rem;
+	padding: 0.1rem 0.2rem;
 	border-radius: 0.2rem;
-	margin: 0.3rem;
-	display: inline;
+	margin: 0.1rem;
+	display: inline-block;
 }
