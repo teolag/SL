@@ -1,0 +1,16 @@
+html {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Euphemia UCAS', sans-serif;
+}
+
+.line-number {
+	background-color: rgb(83, 204, 83);
+	color: rgb(255, 255, 255);
+	padding: 0.2rem 0.2rem;
+	border-radius: 0.2rem;
+	margin: 0.3rem;
+	display: inline;
+}
