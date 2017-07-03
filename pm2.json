@@ -1,0 +1,6 @@
+{
+	"name": "SL",
+	"script": "app.js",
+	"watch": "./",
+	"ignore_watch": ["public",".git"]
+}
