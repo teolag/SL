@@ -1,7 +1,7 @@
 const http = require('http');
 const express = require('express');
 const router = express.Router();
-const config = require('./config');
+const config = require('../config');
 
 router.get('/departures/:siteId', (req, res) => {
 	const host = 'api.sl.se',

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const routes = require('./routes');
-const config = require('./config');
+const config = require('../config');
 
 app.use(logger);
 app.use(routes);

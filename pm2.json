@@ -1,6 +1,6 @@
 {
 	"name": "SL",
-	"script": "app.js",
-	"watch": "./",
-	"ignore_watch": ["public",".git"]
+	"script": "server/app.js",
+	"watch": "server",
+	"ignore_watch": []
 }
