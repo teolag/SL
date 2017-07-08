@@ -1,7 +1,6 @@
 {
   "name": "stockholm",
-  "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "server/app.js",
   "scripts": {
     "start": "pm2 startOrReload pm2.json"

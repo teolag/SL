@@ -1,0 +1,10 @@
+{
+	"name": "SL Avgångar",
+	"short_name": "SL",
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#b1c2c7",
+	"theme_color": "#18abd6",
+	"description": "Departures for metros, busses and trains"
+}
