@@ -9,7 +9,7 @@ router.get('/departures/:siteId', (req, res) => {
 	      params = {
 	    	key: config.apiKeys.realtimeInformation,
 	    	siteId: req.params.siteId,
-	    	timewindow: 60
+	    	timewindow: 20
 	      };
 	get(host, path, params).then(data => res.json(data));
 });

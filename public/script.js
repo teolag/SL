@@ -4,11 +4,12 @@ alvikSödra: 3626,
 minneberg: 3630,
 råcksta: 9104,
 tcentralen: 9001
+odenplan: 9117
 */
 
 
 
-fetch("/api/departures/9104")
+fetch("http://localhost:7575/api/departures/9104")
 	.then(res => res.json())
 	.then(data => {
 		const list = document.querySelector(".departures--råcksta");
@@ -18,10 +19,10 @@ fetch("/api/departures/9104")
 			.join("");
 	});
 
-fetch("/api/departures/9191")
+fetch("http://localhost:7575/api/departures/9117")
 	.then(res => res.json())
 	.then(data => {
-		const list = document.querySelector(".departures--medborgarplatsen");
+		const list = document.querySelector(".departures--odenplan");
 		list.innerHTML = data.ResponseData.Metros
 			.filter(dep => dep.JourneyDirection == 1)
 			.map(dep => printDeparture(dep))
@@ -29,10 +30,10 @@ fetch("/api/departures/9191")
 	});
 
 function printDeparture(d) {
-	return `<div>
+	return `<div class="departure">
 		<span class="line-number">${d.LineNumber}</span>
 		<span class="destination">${d.Destination}</span>
-		<span>${d.DisplayTime}</span>
+		<span class="time">${d.DisplayTime}</span>
 	</div>`;
 }
 
