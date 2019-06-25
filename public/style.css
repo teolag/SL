@@ -1,6 +1,14 @@
 html {
 	font-family: 'Helvetica Neue', sans-serif;
 	background-color: #000000;
+	color: #888;
+}
+
+main {
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
+	padding: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -19,13 +27,13 @@ section {
 	margin-bottom: 0.3em;
 	display: flex;
 	height: 2em;
-	color: white;
+	color: #ccc;
+	border-radius: 2px;
 }
 
 .line-number {
 	background-color: rgb(49, 114, 49);
 	padding: 0.5em;
-	/*border-radius: 0.2rem;*/
 	margin-right: 1em;
 	display: inline-block;
 }

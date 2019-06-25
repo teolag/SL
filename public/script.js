@@ -80,9 +80,10 @@ if ('serviceWorker' in navigator) {
 
 	var refreshing;
 	navigator.serviceWorker.addEventListener('controllerchange', function() {
+		console.log("Refresh page!", refreshing);
 		if (refreshing) return;
-		console.log("Refresh page!");
-		//window.location.reload();
+		const reload = confirm("New version available! Do you want to reload?")
+		if(reload) window.location.reload();
 		refreshing = true;
 	});
 
