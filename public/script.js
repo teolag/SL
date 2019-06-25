@@ -9,7 +9,7 @@ odenplan: 9117
 
 
 
-fetch("http://localhost:7575/api/departures/9104")
+fetch("/api/departures/9104")
 	.then(res => res.json())
 	.then(data => {
 		const list = document.querySelector(".departures--råcksta");
@@ -19,7 +19,7 @@ fetch("http://localhost:7575/api/departures/9104")
 			.join("");
 	});
 
-fetch("http://localhost:7575/api/departures/9117")
+fetch("/api/departures/9117")
 	.then(res => res.json())
 	.then(data => {
 		const list = document.querySelector(".departures--odenplan");
